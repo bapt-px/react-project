@@ -8,13 +8,17 @@ export default () => {
   const [average, setAverage] = useState(0)
 
   const searchPage = e => {
-    fetch('http://www.localhost:80/test', { method: 'GET',
+    fetch('http://www.localhost:80/test', {
+      method: 'POST',
       headers: new Headers(),
       mode: 'no-cors',
-      cache: 'default' })
+      cache: 'default',
+      body: JSON.stringify({url: url})
+    })
       .then(response => {
         setNbComment(5)
         setAverage(5)
+        console.log(url)
       })
   }
 
