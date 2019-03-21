@@ -72,8 +72,8 @@ func scrapLink(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 
 	result := Result{average: 0, nbComment: 0}
 
-	c.OnHTML(".hotels-hotel-review-community-content-review-list-parts-ReviewFilters__filters_wrap--3q5X7 div div ul li span:nth-child(4)", func(e *colly.HTMLElement) {
-		fmt.Println("el: ", e.Text[1])
+	c.OnHTML("div.is-5 div.node-preserve div.content div.choices div.item span:nth-child(4)", func(e *colly.HTMLElement) {
+		fmt.Println("el: ", e.Text)
 
 		fmt.Println("stop", e.Index)
 
