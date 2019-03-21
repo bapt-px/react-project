@@ -7182,7 +7182,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "C:\\Users\\Baptiste\\Documents\\Projet M1\\Projet pro\\project-shoki\\.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/baptiste/IdeaProjects/Go/react-project/.next");
       return error;
     }
   };
@@ -18003,7 +18003,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Baptiste\Documents\Projet M1\Projet pro\project-shoki\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! /home/baptiste/IdeaProjects/Go/react-project/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
